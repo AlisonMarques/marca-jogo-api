@@ -1,7 +1,7 @@
 # marca-jogo-api
 
-## objetivo
+#### objetivo
 
-## itens desenvolvidos
+#### itens desenvolvidos
 
-## itens que faltam a ser desenvolvidos
+#### itens que faltam a ser desenvolvidos
