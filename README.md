@@ -28,5 +28,20 @@
 
  <h3>Itens que faltam a ser desenvolvidos.</h3>
  <ol>
-  <li></li>
+    <li>Desenvolver validações de criação de agendamentos.</li>
+    <li>Desenvolver a listagem de agendamentos do usuário logado.</li>
+    <li>Aplicar o controle de paginação dos agendamentos.</li>
+    <li>Desenvolver a listagem de agendamentos do grupo.</li>
+    <li>Conectar a api com o MongoDB e realizar a configuração do mesmo.</li>
+    <li>Desenvolver a notificação do grupo, que funcionará sempre que houver uma nova notificação.</li>
+    <li>Desenvolver a listagem de notificação do grupo.</li>
+    <li>Desenvolver a função de marcar a notificação como lida.</li>
+    <li>Desenvolver a funcionalidade de cancelamento de agendamento.</li>
+    <li>Configurar o nodemailer para quando ocorrer um cancelamento de agendamento, o grupo receber um e-mail notificando.</li>
+    <li>Configurar os templates de e-mails.</li>
+    <li>Configurar fila com Redis para melhorar o tempo de resposta do cancelamento.</li>
+    <li>Monitorar as falhas na fila.</li>
+    <li>Desenvolver a listagem de horários disponíveis, dentro de 1 dia.</li>
+    <li>Desenvolver o tratamento de exceções.</li>
+    <li>Configurar as variáveis de ambiente.</li>
 </ol>
