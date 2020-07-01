@@ -7,6 +7,7 @@ import * as Yup from 'yup';
 class AppointmentController {
   /**
    * listando todos os agendamentos do usuário logado
+   * e Aplicando o controle de paginaçao
    */
   async index(req, res) {
     const { page = 1 } = req.query;
