@@ -23,16 +23,16 @@
     <li>Criação da rota de listagem de todos os grupos.</li>
     <li>Desenvolvimento do model e migration da tabela de agendamento.</li>
     <li>Criação da rota de agendamento de serviço.</li>
- </ol>
-
-
- <h3>Itens que faltam a ser desenvolvidos.</h3>
- <ol>
     <li>Desenvolver validações de criação de agendamentos.</li>
     <li>Desenvolver a listagem de agendamentos do usuário logado.</li>
     <li>Aplicar o controle de paginação dos agendamentos.</li>
     <li>Desenvolver a listagem de agendamentos do grupo.</li>
     <li>Conectar a api com o MongoDB e realizar a configuração do mesmo.</li>
+ </ol>
+
+
+ <h3>Itens que faltam a ser desenvolvidos.</h3>
+ <ol>
     <li>Desenvolver a notificação do grupo, que funcionará sempre que houver uma nova notificação.</li>
     <li>Desenvolver a listagem de notificação do grupo.</li>
     <li>Desenvolver a função de marcar a notificação como lida.</li>
