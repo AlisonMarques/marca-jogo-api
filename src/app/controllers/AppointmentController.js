@@ -9,9 +9,13 @@ class AppointmentController {
    * listando todos os agendamentos do usuário logado
    */
   async index(req, res) {
+    const { page = 1 } = req.query;
+
     const appointments = await Appointment.findAll({
       where: { user_id: req.userId, canceled_at: null },
       order: ['date'],
+      limit: 20,
+      offset: (page - 1) * 20,
       attributes: ['id', 'date'],
       include: [
         {
