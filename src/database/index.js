@@ -30,7 +30,7 @@ class Database {
       'mongodb://localhost:27017/marcajogo',
       {
         useNewUrlParser: true,
-        useFindAndModify: true,
+        useFindAndModify: false,
         useUnifiedTopology: true,
       }
     );
