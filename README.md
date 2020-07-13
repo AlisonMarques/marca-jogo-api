@@ -28,11 +28,6 @@
     <li>Aplicar o controle de paginação dos agendamentos.</li>
     <li>Desenvolver a listagem de agendamentos do grupo.</li>
     <li>Conectar a api com o MongoDB e realizar a configuração do mesmo.</li>
- </ol>
-
-
- <h3>Itens que faltam a ser desenvolvidos.</h3>
- <ol>
     <li>Desenvolver a notificação do grupo, que funcionará sempre que houver uma nova notificação.</li>
     <li>Desenvolver a listagem de notificação do grupo.</li>
     <li>Desenvolver a função de marcar a notificação como lida.</li>
@@ -44,4 +39,10 @@
     <li>Desenvolver a listagem de horários disponíveis, dentro de 1 dia.</li>
     <li>Desenvolver o tratamento de exceções.</li>
     <li>Configurar as variáveis de ambiente.</li>
+ </ol>
+
+
+ <h3>Itens que faltam a ser desenvolvidos.</h3>
+ <ol>
+
 </ol>
