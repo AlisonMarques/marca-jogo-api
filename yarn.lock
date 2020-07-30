@@ -149,9 +149,9 @@
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
 "@types/node@*":
-  version "14.0.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.14.tgz#24a0b5959f16ac141aeb0c5b3cd7a15b7c64cbce"
-  integrity sha512-syUgf67ZQpaJj01/tRTknkMNoBBLWJOBODF0Zm4NrXmiSuxjymFrxnTu1QVYRubhVkRcZLYZG8STTwJRdVm/WQ==
+  version "14.0.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.24.tgz#b0f86f58564fa02a28b68f8b55d4cdec42e3b9d6"
+  integrity sha512-btt/oNOiDWcSuI721MdL8VQGnjsKjlTMdrKyTcLCKeQp/n4AAMFJ961wMbp+09y8WuGPClDEv07RIItdXKIXAA==
 
 "@typescript-eslint/eslint-plugin@^3.4.0":
   version "3.4.0"
@@ -1855,10 +1855,15 @@ lodash.once@^4.0.0:
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
   integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
-lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.5:
+lodash@^4.17.14, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+
+lodash@^4.17.5:
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 lowercase-keys@^1.0.0, lowercase-keys@^1.0.1:
   version "1.0.1"
@@ -2835,10 +2840,10 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
-sequelize-cli@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/sequelize-cli/-/sequelize-cli-6.0.0.tgz#2dc960459ae64d8555f258bf3cc6aa9876377e07"
-  integrity sha512-DhZ6QwBJR5VXjM5VFt49H+SbNCdJhfjW5seQyqvJA92te+w19lZBIRlKC42LtUnhLf3rBDn8Be3CSuT6reonbg==
+sequelize-cli@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/sequelize-cli/-/sequelize-cli-6.2.0.tgz#fd02bfeae23b8226872f9947f3f8212cc49a4771"
+  integrity sha512-6WQ2x91hg30dUn66mXHnzvHATZ4pyI1GHSNbS/TNN/vRR4BLRSLijadeMgC8zqmKDsL0VqzVVopJWfJakuP++Q==
   dependencies:
     cli-color "^1.4.0"
     fs-extra "^7.0.1"
@@ -2849,14 +2854,14 @@ sequelize-cli@^6.0.0:
     yargs "^13.1.0"
 
 sequelize-pool@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-6.0.0.tgz#2b2f6570fb633ecb38a338c4fc266c0e42ce2af7"
-  integrity sha512-D/VfOX2Z+6JTWqM73lhcqMXp1X4CeqRNVMlndvbOMtyjFAZ2kYzH7rGFGFrLO1r+RZQdc/h+3zQL4nd3cclNLg==
-
-sequelize@^6.1.0:
   version "6.1.0"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-6.1.0.tgz#576eb95709142dbc96f4a8f2b166932cc2781f8d"
-  integrity sha512-8x603RQrj14QZ4dGpsYPMr3YGqsihNX9WPclNN83prwrhHAJH9LHfOG/pK2XUdrwYtbRz+2a7xKXK7rVdw3P2A==
+  resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-6.1.0.tgz#caaa0c1e324d3c2c3a399fed2c7998970925d668"
+  integrity sha512-4YwEw3ZgK/tY/so+GfnSgXkdwIJJ1I32uZJztIEgZeAO6HMgj64OzySbWLgxj+tXhZCJnzRfkY9gINw8Ft8ZMg==
+
+sequelize@^6.3.3:
+  version "6.3.3"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-6.3.3.tgz#930ab26f9e928d9bf2fe1fe477b428a092fef063"
+  integrity sha512-WO/b1ehjSFKlBCHzwZoaPhoW3WyXXy9x74yPrOP8NpE67wzbv0dIucDO4a+THLVyl3lnv3nFMZdJRdkUgb/ZAw==
   dependencies:
     debug "^4.1.1"
     dottie "^2.0.0"

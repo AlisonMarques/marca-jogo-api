@@ -1,10 +1,10 @@
-import Appointment from '../models/Appointment';
 import { startOfHour, parseISO, isBefore, format, subHours } from 'date-fns';
 import pt from 'date-fns/locale/pt';
+import * as Yup from 'yup';
 import User from '../models/User';
 import File from '../models/File';
 import Notification from '../schemas/Notification';
-import * as Yup from 'yup';
+import Appointment from '../models/Appointment';
 
 import CancellationMail from '../jobs/CancellationMail';
 import Queue from '../../lib/Queue';
@@ -42,7 +42,7 @@ class AppointmentController {
     return res.json(appointments);
   }
 
-  //Criando agendamento
+  // Criando agendamento
   async store(req, res) {
     const schema = Yup.object().shape({
       provider_id: Yup.number().required(),
