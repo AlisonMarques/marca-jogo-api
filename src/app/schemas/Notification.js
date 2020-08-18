@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
+import { Schema, model } from 'mongoose';
 
-const NotificationSchema = new mongoose.Schema(
+const NotificationSchema = new Schema(
   {
     content: {
       type: String,
@@ -21,4 +21,4 @@ const NotificationSchema = new mongoose.Schema(
   }
 );
 
-export default mongoose.model('Notification', NotificationSchema);
+export default model('Notification', NotificationSchema);

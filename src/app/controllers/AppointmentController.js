@@ -1,19 +1,17 @@
 import { startOfHour, parseISO, isBefore, format, subHours } from 'date-fns';
 import pt from 'date-fns/locale/pt';
 import * as Yup from 'yup';
+
 import User from '../models/User';
 import File from '../models/File';
-import Notification from '../schemas/Notification';
 import Appointment from '../models/Appointment';
 
-import CancellationMail from '../jobs/CancellationMail';
 import Queue from '../../lib/Queue';
+import Notification from '../schemas/Notification';
+import CancellationMail from '../jobs/CancellationMail';
 
 class AppointmentController {
-  /**
-   * listando todos os agendamentos do usuário logado
-   * e Aplicando o controle de paginaçao
-   */
+
   async index(req, res) {
     const { page = 1 } = req.query;
 
@@ -49,15 +47,15 @@ class AppointmentController {
       date: Yup.date().required(),
     });
 
-    if (!(await schema.isValid(req.body))) {
-      return res.status(400).json({ error: 'Validation fails' });
+    const agendamentoValido = await schema.isValid(req.body)
+
+    if (!agendamentoValido) {
+      return res
+        .status(400)
+        .json({ error: 'Validation fails' });
     }
 
     const { provider_id, date } = req.body;
-
-    /**
-     * Check if provider_id is a provider
-     */
 
     const checkIsPRovider = await User.findOne({
       where: { id: provider_id, provider: true },
