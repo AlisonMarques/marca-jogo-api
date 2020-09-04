@@ -1,4 +1,4 @@
-version: "2"
+version: '2'
 
 networks:
   api:
@@ -8,50 +8,50 @@ networks:
 services:
   marca-jogo-api:
     build: .
-    container_name: "marca-jogo-api"
+    container_name: 'marca-jogo-api'
     ports:
-      - "3333:3333"
+      - '3333:3333'
     networks:
-      - "api"
+      - 'api'
 
   mongodb-marca-jogo:
-    image: "docker.io/bitnami/mongodb:4.2-debian-10"
-    container_name: "mongo-marca-jogo"
+    image: 'docker.io/bitnami/mongodb:4.2-debian-10'
+    container_name: 'mongo-marca-jogo'
     ports:
-      - "27017:27017"
+      - '27017:27017'
     volumes:
-      - "mongodb_data:/bitnami/mongodb"
+      - 'mongodb_data:/bitnami/mongodb'
     networks:
-      - "api"
+      - 'api'
 
   redis-marca-jogo:
-    container_name: "redis-marca-jogo"
-    image: "docker.io/bitnami/redis:6.0-debian-10"
+    container_name: 'redis-marca-jogo'
+    image: 'docker.io/bitnami/redis:6.0-debian-10'
     environment:
       # ALLOW_EMPTY_PASSWORD is recommended only for development.
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
     ports:
-      - "6379:6379"
+      - '6379:6379'
     volumes:
-      - "redis_data:/bitnami/redis/data"
+      - 'redis_data:/bitnami/redis/data'
     networks:
-      - "api"
+      - 'api'
 
   postgresql-marca-jogo:
-    image: "docker.io/bitnami/postgresql:11-debian-10"
-    container_name: "postgresql-marca-jogo"
+    image: 'docker.io/bitnami/postgresql:11-debian-10'
+    container_name: 'postgresql-marca-jogo'
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
-      - "postgresql_data:/bitnami/postgresql"
+      - 'postgresql_data:/bitnami/postgresql'
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - POSTGRESQL_USERNAME=postgres
       - POSTGRESQL_POSTGRES_PASSWORD=docker
       - POSTGRESQL_DATABASE=marcajogopostgres
     networks:
-      - "api"
+      - 'api'
 
 volumes:
   redis_data:
